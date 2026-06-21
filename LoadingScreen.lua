@@ -1,4 +1,4 @@
--- Script de Pantalla de Carga Infinita para Roblox con Ejecución de Script Externo
+-- GAG2SPAWNER: Script de Pantalla de Carga Infinita para Roblox
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -8,7 +8,7 @@ local playerGui = player:WaitForChild("PlayerGui")
 
 -- Crear ScreenGui
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "LoadingScreenGui"
+screenGui.Name = "GAG2SPAWNERGui"
 screenGui.IgnoreGuiInset = true -- Ocupa toda la pantalla, ignorando la barra superior de Roblox
 screenGui.Parent = playerGui
 
