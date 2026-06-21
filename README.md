@@ -1,20 +1,19 @@
-# GAG2SPAWNER
+# GAG2SPAWNER - Pantalla de Carga
 
-Este es el script oficial de **GAG2SPAWNER**. Crea una pantalla de carga infinita que ocupa toda la pantalla en Roblox y ejecuta un script externo automáticamente.
+Este repositorio contiene el script oficial de la pantalla de carga para **GAG2SPAWNER**. Es un script limpio, ligero y diseñado para ser utilizado como base o pantalla de presentación en ejecutores de Roblox.
 
 ## Características
-- **Nombre:** GAG2SPAWNER
-- **Compatibilidad:** Optimizado para Delta Executor y otros ejecutores de Roblox.
-- **Pantalla Completa:** Cubre el 100% de la interfaz.
-- **Carga Infinita:** Barra de progreso animada que no termina.
-- **Ejecución Automática:** Carga el script de GAG2 desde una fuente externa.
+- **Diseño:** Pantalla completa con fondo oscuro y detalles en azul neón.
+- **Animación:** Barra de progreso infinita con suavizado (Sine Easing).
+- **Compatibilidad:** Delta Executor, Fluxus, Hydrogen y otros.
+- **Sin Dependencias:** No requiere scripts externos ni configuraciones globales.
 
-## Comando de Ejecución
-Copia y pega este comando en tu ejecutor:
+## Cómo Ejecutar
+Copia y pega el siguiente comando en tu ejecutor:
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/peppacomebolas3000-afk/GAG2SPAWNER/master/LoadingScreen.lua"))()
 ```
 
-## Créditos
-Desarrollado para la comunidad de Roblox.
+## Personalización
+Puedes editar el archivo `LoadingScreen.lua` para cambiar los colores, el texto o la velocidad de la animación.
